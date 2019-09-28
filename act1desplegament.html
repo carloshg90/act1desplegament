@@ -5,20 +5,27 @@
 	<title>Activitat1</title>
 	<script type="text/javascript">
 
-	var numeros = new Array (5);
+	var numeros = new Array (10);
 
 	for(var i=0,len=numeros .length;i<len;i++){
     	numeros[i] = parseInt(prompt("Inrodueix un numero"));
     }
 
- 	var min = numeros[0];
+ 	var max = numeros[0];
+	var min = numeros[0];
 
 	for(var i=0,len=numeros .length;i<len;i++){
     	if(numeros [i] < min){
         	min = numeros [i];
     }
+	for(var i=0,len=numeros .length;i<len;i++){
+        if(numeros [i] > max){
+                max = numeros [i];
+    }
 }
 document.write(min);
+document.write(max);
+}
 </script>
 		
 </head>
